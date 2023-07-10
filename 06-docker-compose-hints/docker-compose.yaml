@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nginx:
+    image: nginx 
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx-lab-ssl: อะไรดีน้า
+      - ./index.html: อะไรดีน้า 
+      - ./nginx.conf: อะไรดีน้า
